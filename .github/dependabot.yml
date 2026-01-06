@@ -1,0 +1,15 @@
+version: 2
+updates:
+  # Note: Dependabot uses "pip" ecosystem for Python, which works with uv projects
+  # since pyproject.toml dependency format is compatible
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    labels:
+      - "dependencies"
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
