@@ -13,6 +13,26 @@ A modern Python project template with uv, Ruff, mypy, and CI/CD best practices.
 - 🔒 **Pre-commit hooks** with conventional commit validation
 - 🛡️ **Dependabot** for security updates
 
+## Project Structure
+
+```text
+.
+├── .github/
+│   ├── workflows/
+│   │   ├── ci.yml           # CI: Lint, Type-check, Test matrix
+│   │   └── release.yml      # CD: Automated versioning & GitHub Release
+│   └── dependabot.yml       # Weekly dependency updates
+├── scripts/
+│   ├── setup-github.ps1     # Configure GitHub repo settings (PowerShell)
+│   └── setup-github.sh      # Configure GitHub repo settings (Bash)
+├── src/
+│   └── {{project_name}}/    # Your project source code
+├── tests/                   # Your test suite
+├── Dockerfile               # Containerization with uv
+├── pyproject.toml           # Project metadata & tool configuration
+└── README.md                # This file
+```
+
 ## Usage
 
 1. Click **"Use this template"** on GitHub.
